@@ -1,0 +1,3 @@
+[submodule "woot_music_keyboard"]
+	path = woot_music_keyboard
+	url = https://github.com/yoshihiroxx/woot_music_keyboard.git
