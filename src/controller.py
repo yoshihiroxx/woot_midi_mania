@@ -33,7 +33,9 @@ class Controller( QThread ):
 
     def changePort( self,  id ):
         self.midiout.close_port()
-        self.midiout.open_port(id)
+        print( id )
+        if id > 0 :
+            self.midiout.open_port(id -1)
 
     def updateChannel( self, id ):
         self.use_channel = 0

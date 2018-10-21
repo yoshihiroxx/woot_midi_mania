@@ -16,6 +16,7 @@ def main():
     app = QApplication(sys.argv)
 
     available_ports = midiout.get_ports()
+    available_ports.insert(0, "None")
     model = {}
     model['available_ports'] = QStringListModel()
     model['available_ports'].setStringList( available_ports )
